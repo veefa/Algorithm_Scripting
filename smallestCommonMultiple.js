@@ -11,8 +11,8 @@ The answer here would be 6.
 //
 ////Slution
 //
-ction smallestCommons(arr) {
-  let sortArr = arr.sort();
+function smallestCommons(arr) {
+  let sortArr = arr.sort((a, b) => a - b);
   let newArr = [];
   for (let i = sortArr[0]; i <= sortArr[1]; i++) {
      newArr.push(i);
